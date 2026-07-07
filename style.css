@@ -1,0 +1,214 @@
+:root {
+    --gold-dark: #B8860B ;
+    --gold-light: #D4A84B;
+    --text-dark: #0F0E0C;
+    --success: #4A7C59;
+    --text-primary: #F5F0E8;
+    --text-secondary: #A69F94;
+    --border-color:#2A2622;
+    --danger: #8B3A3A;
+    --bg-card: #1A1815;
+    --text-muted: #6B6560;
+    --bg-dark: #0F0E0C;
+    --main-font: "Cormorant Garamond", serif;
+
+}
+
+body {
+font-family: "Libre Franklin", sans-serif;
+}
+
+/* TEXT STYLING CLASSES */
+/*  */
+/*  */
+
+/* PRIMARY */
+.text-gold{
+    color: var(--gold-light);
+}
+
+/* SECONDARY */
+.secondary-text {
+    color: var(--text-secondary);
+}
+
+/* PRIMARY FONT */
+.heading-font {
+    font-family: var(--main-font);
+}
+
+
+/* SECONDARY FONT */
+
+/* BUTTON STYLING */
+/*  */
+/*  */
+
+
+/* BTN */
+.button {
+    border: solid 1px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-transform: uppercase;
+    padding: 0.6rem 1.2rem;
+}
+
+.main {
+        border-color: var(--gold-dark);
+         color: var(--gold-light);
+
+}
+
+.button:hover {
+    color: var(--text-dark);
+    background-color: var(--gold-light);
+
+}
+
+button,a {
+    cursor: pointer;
+}
+
+
+
+
+
+/* SECONDARY BTN */
+.secondary {
+    border-color: var(--gold-dark);
+    background-color: var(--gold-dark);
+    color: var(--text-dark);
+}
+
+.secondary:hover {
+    color: var(--text-dark);
+    background-color: var(--gold-light);
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 9px 1px var(--gold-light);
+
+}
+
+/*  */
+/*  */
+
+/* START OF ALL SECTIONS */
+
+.start p:first-child {
+    color: var(--gold-light);
+    text-transform: uppercase;
+}
+.start h2 {
+    font-family: var(--main-font);
+}
+
+
+
+
+/* HERO SECTION */
+/*  */
+/*  */
+
+#hero-section .blink-blink {
+    animation: blink-blink 0.7s  infinite alternate;
+}
+
+@keyframes blink-blink {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*  */
+/*  */
+
+/* CARD GRID IN #SERVICES SECTION */
+
+#services .services-card{
+    background-color: var(--bg-dark) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 28px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border: solid 1px var(--border-color)
+}
+
+
+/* BEFORE AND HOVER */
+
+
+#services .services-card::before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top:0;
+    width: 0%;
+    transition: 0.3s;
+    
+}
+
+
+#services .services-card:hover::before {
+    background-color: var(--gold-light);   
+    width: 100%;
+
+}
+
+#services  .services-card:hover {
+    border: solid 1px var(--gold-light);
+    transform: translateY(-8px);
+}
+
+
+#services  .services-card:hover ion-icon {
+    background-color: var(--gold-light);
+    color: var(--bg-card);
+}
+
+
+#services  .services-card ion-icon {
+border: solid 1px var(--gold-light);
+padding: 0.7rem;
+color: var(--gold-dark);
+position: relative;
+transition: 0.3s;
+}
+
+#services  .services-card p {
+    color: var(--text-muted);
+}
+
+#services  .services-card span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ecbc5611;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+#services .services-card:hover span {
+    opacity: 1;
+
+}
+
+
+/* FOOTER */
+
+footer ul li {
+    transition: 0.3s;
+}
+footer ul li:hover {
+    transform: translateX(5px);
+    color: var(--gold-light);
+
+}
+

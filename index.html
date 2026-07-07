@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Tailwinds Config -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Aurum Gold</title>
+  </head>
+  <body class="bg-[#0a0a0a] text-[#F5F0E8] ">
+    <main>
+      <!-- HEADER SECTION -->
+      <header class="px-4 py-6 uppercase sticky top-0 bg-[#0a0a0a] z-[100]">
+        <!-- LOGO -->
+        <div class="container mx-auto flex items-center justify-between">
+          
+          <a href="#hero-section" class="font-bold text-2xl tracking-wider heading-font"
+            ><span class="text-gold">aurum</span> gold</a
+          >
+
+          <!-- NAV -->
+          <ul
+            class="gap-4 xl:gap-8 items-center text-sm secondary-text hidden lg:flex"
+          >
+            <li>
+              <a
+                href="#services"
+                class="hover:text-[var(--gold-light)] duration-300"
+                >services</a
+              >
+            </li>
+            <li class="">
+              <a href="#why" class="hover:text-[var(--gold-light)] duration-300"
+                >why gold
+              </a>
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="hover:text-[var(--gold-light)] duration-300"
+                >products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-[var(--gold-light)] duration-300"
+                >contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- HEADER BUTTONS -->
+          <div class="flex items-center gap-3 justify-center ">
+            <a  class="button main text-sm hidden md:block w-max"
+              >sell gold</a
+            >
+
+            <a  class="button secondary text-sm hidden md:block w-max"
+              >buy gold</a
+            >
+
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+
+            <!-- Burger Menu Button -->
+            <button 
+              
+              class="p-[8px] border border-[var(--border-color)] block md:hidden  w-max flex justify-center items-center menu-button hover:text-[var(--gold-light)] duration-600"
+
+              ><ion-icon name="menu-outline" class="text-3xl"></ion-icon
+            ></button>
+
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+     
+            <!-- Burger Menu Body -->
+            <div class="menu-burger absolute top-0 right-0 bg-[var(--bg-dark)] h-screen w-[350px] border border-[var(--border-color)] block md:hidden p-8 flex flex-col items-end 
+            translate-x-full duration-300
+            ">
+              
+              <button class="p-[8px] border border-[var(--border-color)] w-max flex justify-center items-center menu-button-close hover:text-[var(--gold-light)] duration-300 block "><ion-icon name="close-outline" class="text-3xl "></ion-icon></button>
+              
+              <!-- Menu Elements -->
+               <div class="w-full flex flex-col gap-8 my-12 ">
+
+                <div class="flex items-center justify-between  duration-300 hover:translate-x-4 group ">
+                <a class="font-[--main-font] text-[var(--text-muted)] text-2xl capitalize group-hover:text-(--gold-dark) menu-item-btn" href="#services">Services</a>
+                <ion-icon name="arrow-forward-outline" class="text-(--gold-dark) text-2xl opacity-0 group-hover:opacity-100 duration-300"></ion-icon>
+                </div>
+                
+                <!--  -->
+                <hr class="border-0 border-b border-[var(--border-color)] opacity-50">
+                <!--  -->
+                
+                <div class="flex items-center justify-between  duration-300 hover:translate-x-4 group ">
+                <a class="font-[--main-font] text-(--text-muted) text-2xl capitalize group-hover:text-(--gold-dark) menu-item-btn" href="#why">why gold</a>
+                <ion-icon name="arrow-forward-outline" class="text-(--gold-dark) text-2xl opacity-0 group-hover:opacity-100 duration-300"></ion-icon>
+                </div>
+                
+                <!--  -->
+                <hr class="border-0 border-b border-[var(--border-color)] opacity-50">
+                <!--  -->
+                
+                <div class="flex items-center justify-between  duration-300 hover:translate-x-4 group ">
+                <a class="font-[--main-font] text-(--text-muted) text-2xl capitalize group-hover:text-(--gold-dark) menu-item-btn" href="#products">products</a>
+                <ion-icon name="arrow-forward-outline" class="text-(--gold-dark) text-2xl opacity-0 group-hover:opacity-100 duration-300"></ion-icon>
+                </div>
+               <!--  -->
+                <hr class="border-0 border-b border-[var(--border-color)] opacity-50">
+               <!--  -->
+
+                <div class="flex items-center justify-between  duration-300 hover:translate-x-4 group ">
+                <a class="font-[--main-font] text-(--text-muted) text-2xl capitalize group-hover:text-(--gold-dark) menu-item-btn" href="#contact">contact</a>
+                <ion-icon name="arrow-forward-outline" class="text-(--gold-dark) text-2xl opacity-0 group-hover:opacity-100 duration-300"></ion-icon>
+                </div>
+
+     
+</div>
+              <!-- Menu Elements -->
+     
+<div class="menu-btns flex flex-col gap-4 w-full">
+  <button class="button main ">sell gold</button>
+  <button class="button secondary  ">buy gold</button>
+</div>     
+     
+            </div>
+
+<!--  -->
+                </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="py-[80px] min-h-[calc(100vh-80px)]" id="hero-section">
+        <!-- MAIN CONTAINER -->
+        <div
+          class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12"
+        >
+          <!-- GRID LEFT SIDE -->
+          <div class="flex flex-col gap-8 mx-auto">
+            <!-- LABEL WITH GREEN DOT -->
+            <div
+              class="flex items-center gap-2 w-fit border py-2 px-5 border-[var(--border-color)] bg-[var(--bg-card)] text-sm"
+            >
+              <span
+                class="w-2 h-2 bg-[var(--success)] inline-block rounded-full blink-blink"
+              ></span>
+              <p class="uppercase secondary-text">Marketing - trading live</p>
+            </div>
+
+            <!-- HERO TEXT -->
+            <h1
+              class="heading-font text-6xl lg:text-7xl text-pretty word-spacing-[5px]"
+            >
+              Invest in <span class="text-gold italic">Gold</span>
+              <br class="hidden lg:block" />Secure Your
+              <br class="hidden lg:block" />
+              Future
+            </h1>
+
+            <!-- HERO PARAGRAPH -->
+            <p class="lg:w-[80%] leading-[1.6] text-[var(--text-muted)]">
+              Experience premium gold trading with competitive rates, secure
+              storage, and expert guidance. Join thousands of investors who
+              trust us with their precious metals portfolio.
+            </p>
+
+            <!-- HERO BUTTONS -->
+            <div class="text-sm flex flex-col md:flex-row w-full gap-3">
+              <a href="#products" class="button secondary inline-block "
+                >Explore Products</a
+              >
+
+              <a href="#contact" class="button main inline-block"
+                >get free consultation</a
+              >
+            </div>
+
+            <!-- HR -->
+            <hr
+              class="border-0 border-b border-[var(--border-color)] opacity-50"
+            />
+
+            <!-- DETAILS IN HERO -->
+            <div class="flex flex-1 justify-between">
+              <div>
+                <h5 class="text-gold heading-font text-3xl mb-2">$2.5B+</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs md:text-sm">
+                  Assets under <br />
+                  management
+                </p>
+              </div>
+
+              <div>
+                <h5 class="text-gold heading-font text-3xl mb-2">$50K+</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs md:text-sm">
+                  Satisfied Clients
+                </p>
+              </div>
+
+              <div>
+                <h5 class="text-gold heading-font text-3xl mb-2">15K+</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs md:text-sm">
+                  Years Experience
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <!--  -->
+
+          <!-- RIGHT SIDE OF GRID -->
+          <div class="relative flex items-center justify-end">
+            <div
+              class="h-full w-full bg-[var(--bg-card)] xl:w-3/4 lg:h-3/4 uppercase p-8 text-[var(--text-secondary)] text-sm flex flex-col gap-5 relative"
+            >
+              <div
+                class="h-[2px] w-full bg-gradient-to-r from-transparent via-[#D4A84B] to-transparent absolute top-0 left-0"
+              ></div>
+
+              <!-- FIRST LINE IN THE SECTION -->
+              <div class="flex justify-between">
+                <p class="">Gold Spot Price (XAU/USD)</p>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="w-2 h-2 bg-[var(--success)] inline-block rounded-full blink-blink"
+                  ></span>
+                  <p>live</p>
+                </div>
+              </div>
+
+              <div>
+                <h1
+                  class="heading-font text-white font-semibold text-4xl lg:text-5xl"
+                >
+                  <span class="text-gold">$</span>6,241.50
+                </h1>
+
+                <span
+                  class="inline-block p-1.5 text-[var(--success)] mt-2 bg-[#4A7C59]/20"
+                  ><ion-icon name="caret-up-outline"></ion-icon> +12.82%
+                  (+$684.25)</span
+                >
+              </div>
+
+              <!-- HR -->
+              <hr
+                class="border-0 border-b border-[var(--border-color)] opacity-50 mt-6"
+              />
+
+              <!-- STATISTICS -->
+              <div class="grid grid-cols-2 gap-4 flex-1">
+                <div
+                  class="bg-[var(--bg-dark)] border p-3 border-[var(--border-color)]"
+                >
+                  <p>Silver (XAG)</p>
+                  <p class="heading-font text-white text-2xl">$31.42</p>
+                  <p class="text-[var(--success)]">+1.28%</p>
+                </div>
+
+                <!--  -->
+                <div
+                  class="bg-[var(--bg-dark)] border p-3 border-[var(--border-color)]"
+                >
+                  <p>Platinum (XPT)</p>
+                  <p class="heading-font text-white text-2xl">$1,024.80</p>
+                  <p class="text-[var(--danger)]">-0.45%</p>
+                </div>
+                <!--  -->
+
+                <div
+                  class="bg-[var(--bg-dark)] border p-3 border-[var(--border-color)]"
+                >
+                  <p>Palladium (XPD)</p>
+                  <p class="heading-font text-white text-2xl">$986.50</p>
+                  <p class="text-[var(--success)]">+0.82%</p>
+                </div>
+                <!--  -->
+
+                <div
+                  class="bg-[var(--bg-dark)] border p-3 border-[var(--border-color)]"
+                >
+                  <p>Gold/Silver Ratio</p>
+                  <p class="heading-font text-white text-2xl">136.4</p>
+                  <p class="text-[var(--success)]">+1.05%</p>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="bg-[var(--bg-card)] py-[80px] px-4" id="services">
+        <!-- MAIN CONTAINER OF SERVICES SECTION -->
+        <div
+          class="container mx-auto flex flex-col items-center justify-center gap-12 min-h-[calc(100vh-160px)]"
+        >
+          <!-- START OF ALL SECTIONS -->
+          <div class="start text-center flex flex-col gap-3">
+            <p class="text-sm">our services</p>
+            <h2 class="font-semibold text-4xl">
+              Complete Gold Investment <br class="hidden lg:block" />
+              Solutions
+            </h2>
+            <p class="text-[var(--text-muted)] leading-[1.6]">
+              From purchasing your first gold coin to managing a diversified
+              precious metals <br class="hidden md:block" />
+              portfolio, we provide end-to-end services tailored to your needs.
+            </p>
+          </div>
+
+          <!-- GRID CARDS OF THE SECTION (SERVICES) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!--  CODE IN CSS -->
+
+            <!-- ITEM -->
+            <div class="lg:h-[250px] services-card">
+              <!-- ITEM CONTAINER -->
+
+              <div class="relative z-40">
+                <!-- ICON -->
+                <ion-icon name="wallet-outline" class="text-2xl"></ion-icon>
+
+                <h3 class="heading-font text-2xl py-4">Buy Bullion</h3>
+                <p class="text-sm">
+                  Purchase gold bars and coins from certified mints worldwide
+                  with competitive premiums and guaranteed authenticity.
+                </p>
+              </div>
+              <span class="z-20"></span>
+            </div>
+
+            <!-- ITEM -->
+            <div class="lg:h-[250px] services-card">
+              <!-- ITEM CONTAINER -->
+
+              <div class="relative z-40">
+                <!-- ICON -->
+                <ion-icon name="time-outline" class="text-2xl"></ion-icon>
+
+                <h3 class="heading-font text-2xl py-4">Sell Your Gold</h3>
+                <p class="text-sm">
+                  Get the best market rates for your gold items. Free
+                  appraisals, instant quotes, and same-day payment available.
+                </p>
+              </div>
+              <span class="z-20"></span>
+            </div>
+
+            <!-- ITEM -->
+            <div class="lg:h-[250px] services-card">
+              <!-- ITEM CONTAINER -->
+
+              <div class="relative z-40">
+                <!-- ICON -->
+                <ion-icon name="save-outline" class="text-2xl"></ion-icon>
+
+                <h3 class="heading-font text-2xl py-4">Secure Storage</h3>
+                <p class="text-sm">
+                  Now state-of-the-art vault facilities with 24/7 security, full
+                  insurance coverage, and allocated storage options easily.
+                </p>
+              </div>
+              <span class="z-20"></span>
+            </div>
+
+            <!-- ITEM -->
+            <div class="lg:h-[250px] services-card">
+              <!-- ITEM CONTAINER -->
+
+              <div class="relative z-40">
+                <!-- ICON -->
+                <ion-icon name="layers-outline" class="text-2xl"></ion-icon>
+
+                <h3 class="heading-font text-2xl py-4">Gold IRA</h3>
+                <p class="text-sm">
+                  Diversify your retirement portfolio with precious metals.
+                  Tax-advantaged gold IRA accounts with expert guidance.
+                </p>
+              </div>
+              <span class="z-20"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY GOLD SECTION -->
+      <section class="py-[80px] px-4 flex items-center" id="why">
+        <div
+          class="container mx-auto gap-12 min-h-[calc(100vh-160px)] flex flex-col justify-center"
+        >
+          <!-- THE GRID -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 h-full">
+            <!-- LEFT SIDE OF GRID -->
+            <div class="left-side flex flex-col">
+              <p class="text-sm uppercase text-[var(--gold-dark)]">why gold</p>
+              <h2 class="heading-font text-4xl pt-4 pb-8">
+                The Timeless Standard <br class="hidden lg:block" />
+                of Wealth Preservation
+              </h2>
+
+              <!-- ITEM -->
+              <div class="flex gap-3">
+                <p class="text-[var(--gold-dark)] text-2xl heading-font">01</p>
+                <div>
+                  <h5 class="text-2xl heading-font">Inflation Hedge</h5>
+                  <p class="text-[var(--text-muted)] text-sm leading-[1.6]">
+                    Gold has historically maintained its purchasing power over
+                    centuries, protecting <br class="hidden xl:block" />
+                    wealth against currency devaluation and inflation.
+                  </p>
+
+                  <!-- HR -->
+                  <hr
+                    class="border-0 border-b border-[var(--border-color)] opacity-50 my-4"
+                  />
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="flex gap-3">
+                <p class="text-[var(--gold-dark)] text-2xl heading-font">02</p>
+                <div>
+                  <h5 class="text-2xl heading-font">
+                    Portfolio Diversification
+                  </h5>
+                  <p class="text-[var(--text-muted)] text-sm leading-[1.6]">
+                    Gold's low correlation with stocks and bonds makes it an
+                    effective tool for reducing <br class="hidden xl:block" />
+                    overall portfolio risk and volatility.
+                  </p>
+
+                  <!-- HR -->
+                  <hr
+                    class="border-0 border-b border-[var(--border-color)] opacity-50 my-4"
+                  />
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="flex gap-3">
+                <p class="text-[var(--gold-dark)] text-2xl heading-font">03</p>
+                <div>
+                  <h5 class="text-2xl heading-font">Safe Haven Asset</h5>
+                  <p class="text-[var(--text-muted)] text-sm leading-[1.6]">
+                    During economic uncertainty and geopolitical tensions, gold
+                    serves as a reliable <br class="hidden xl:block" />store of
+                    value when other assets decline.
+                  </p>
+
+                  <!-- HR -->
+                  <hr
+                    class="border-0 border-b border-[var(--border-color)] opacity-50 my-4"
+                  />
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="flex gap-3">
+                <p class="text-[var(--gold-dark)] text-2xl heading-font">04</p>
+                <div>
+                  <h5 class="text-2xl heading-font">Tangible Ownership</h5>
+                  <p class="text-[var(--text-muted)] text-sm leading-[1.6]">
+                    Unlike digital assets, physical gold provides true ownership
+                    without counterparty <br class="hidden xl:block" />
+                    risk or dependency on electronic systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE THAT INCLUDES IMGS -->
+            <div class="right-grid flex  xl:justify-end items-center">
+              <div class="grid grid-cols-2 gap-3 auto-rows-[150px] w-full lg:w-fit lg:grid-cols-[repeat(auto-fit,minmax(150px,1fr))]"
+              >
+                <!-- ITEM -->
+
+                <div
+                  class="col-span-2 row-span-2 overflow-hidden w-full h-full border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300"
+                >
+                  <img
+                    src="assets/gold-1.jpg"
+                    alt="gold"
+                    class="w-full h-full hover:scale-110 duration-300 object-cover"
+                  />
+                </div>
+                <!-- ITEM -->
+
+                <div class="overflow-hidden w-full h-full border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300">
+                  <img
+                    src="assets/gold-2.jpg"
+                    alt="gold"
+                    class="w-full h-full hover:scale-110 duration-300 object-cover "
+                  />
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="overflow-hidden w-full h-full border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300">
+                  <img
+                    src="assets/gold-3.jpg"
+                    alt="gold"
+                    class="w-full h-full hover:scale-110 duration-300 object-cover"
+                  />
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="overflow-hidden w-full h-full border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300">
+                  <img
+                    src="assets/gold-4.webp"
+                    alt="gold"
+                    class="w-full h-full hover:scale-110 duration-300 object-cover"
+                  />
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="overflow-hidden w-full h-full border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300">
+                  <img
+                    src="assets/gold-5.jpg"
+                    alt="gold"
+                    class="w-full h-full hover:scale-110 duration-300 object-cover "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS SECTION -->
+      <section class="bg-[var(--bg-card)] py-[80px] px-4" id="products">
+        <div class=" container mx-auto flex flex-col items-center justify-center gap-12 min-h-[calc(100vh-160px)]">
+               
+          <!-- START OF ALL SECTIONS -->
+          <div class="start text-center flex flex-col gap-3">
+            <p class="text-sm">our products</p>
+            <h2 class="font-semibold text-4xl">
+              Premium Gold Selection
+            </h2>
+            <p class="text-[var(--text-muted)] leading-[1.6] ">
+              Explore our curated collection of gold bars and coins from the world's most prestigious <br class="hidden lg:block"> mints and refiners.
+            </p>
+          </div>
+          
+          <!-- Buttons -->
+          <div class="hidden md:block">
+            <ul class="uppercase text-sm text-[var(--text-muted)] flex gap-4 ">
+            <li><a  class="border border-[var(--border-color)] py-2.5  px-3.5 focus:bg-[var(--gold-dark)] focus:text-[var(--bg-card)] hover:bg-[var(--gold-dark)] hover:text-[var(--bg-dark)] duration-300">gold coins</a></li>
+
+            <li><a  class="border border-[var(--border-color)] py-2.5 px-3.5 focus:bg-[var(--gold-dark)] focus:text-[var(--bg-card)] hover:bg-[var(--gold-dark)] hover:text-[var(--bg-dark)] duration-300">gold bars</a></li>
+            
+            <li><a  class="border border-[var(--border-color)] py-2.5 px-3.5 focus:bg-[var(--gold-dark)] focus:text-[var(--bg-card)]   
+              hover:bg-[var(--gold-dark)] hover:text-[var(--bg-dark)] duration-300">silver</a></li>
+            
+            <li><a  class="border border-[var(--border-color)] py-2.5 px-3.5 focus:bg-[var(--gold-dark)] focus:text-[var(--bg-card)] hover:bg-[var(--gold-dark)] hover:text-[var(--bg-dark)] duration-300">platinum</a></li>
+            </ul>
+          </div>
+
+          <!-- PRODUCTS GRID CARDS -->
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+            <!-- ITEM 1 -->
+            <div class="bg-[var(--bg-dark)] border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300 hover:-translate-y-2 h-[350px] flex flex-col">
+              <div class="product-image h-[220px] overflow-hidden">
+                <img src="assets/gold-1.jpg" alt="product" class="object-cover hover:scale-110 w-full h-full duration-300">
+              </div>
+              <!-- PRODUCT BODY -->
+              <div class="p-4 flex flex-col justify-between flex-1">
+              <div class="product-text">
+                <h5 class="heading-font text-xl mb-1" >American Gold Eagle</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs">1 oz · 22 Karat</p>
+              </div>
+              
+              <div class="flex justify-between">
+                <p class="heading-font text-xl text-[var(--gold-light)]">$4,395</p>
+                <a  href="# aria-label="Add to cart" class="py-1 px-3 border border-[var(--border-color)] hover:text-[var(--bg-dark)] hover:bg-[var(--gold-dark)] duration-300 flex flex-col">+</a>
+              </div>
+            </div>
+             </div>
+
+            <!-- ITEM 2 -->
+            <div class="bg-[var(--bg-dark)] border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300 hover:-translate-y-2 h-[350px] flex flex-col">
+              <div class="product-image h-[220px] overflow-hidden">
+                <img src="assets/gold-2.jpg" alt="product" class="object-cover hover:scale-110 w-full h-full duration-300">
+              </div>
+              <!-- PRODUCT BODY -->
+              <div class="p-4 flex flex-col justify-between flex-1">
+              <div class="product-text">
+                <h5 class="heading-font text-xl mb-1" >Canadian Maple Leaf</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs">1 oz · 22 Karat</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="heading-font text-xl text-[var(--gold-light)]">$4,380</p>
+                <a  href="# aria-label="Add to cart" class="py-1 px-3 border border-[var(--border-color)] hover:text-[var(--bg-dark)] hover:bg-[var(--gold-dark)] duration-300">+</a>
+              </div>
+            </div>
+             </div>
+
+            <!-- ITEM 3 -->
+            <div class="bg-[var(--bg-dark)] border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300 hover:-translate-y-2 h-[350px] flex flex-col">
+              <div class="product-image h-[220px] overflow-hidden">
+                <img src="assets/gold-3.jpg" alt="product" class="object-cover h-full w-full hover:scale-110 duration-300">
+              </div>
+              <!-- PRODUCT BODY -->
+              <div class="p-4 flex flex-col justify-between flex-1">
+              <div class="product-text">
+                <h5 class="heading-font text-xl mb-1" >South African Krugerrand</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs">1 oz · 22 Karat</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="heading-font text-xl text-[var(--gold-light)]">$4,395</p>
+                <a   href="#" aria-label="Add to cart" class="py-1 px-3 border border-[var(--border-color)] hover:text-[var(--bg-dark)] hover:bg-[var(--gold-dark)] duration-300">+</a>
+              </div>
+            </div>
+             </div>
+
+            <!-- ITEM 4 -->
+            <div class="bg-[var(--bg-dark)] border border-[var(--border-color)] hover:border-[var(--gold-light)] duration-300 hover:-translate-y-2 h-[350px] flex flex-col">
+              
+              <div class="product-image h-[220px] overflow-hidden">                
+              <img src="assets/gold-4.webp" alt="product" class="object-cover hover:scale-110 w-full h-full duration-300">
+              </div>
+              
+              <!-- PRODUCT BODY -->
+              <div class="p-4 flex flex-col justify-between flex-1">
+              <div class="product-text">
+                <h5 class="heading-font text-xl mb-1" >Austrian Philharmonic</h5>
+                <p class="text-[var(--text-muted)] uppercase text-xs">1 oz · 22 Karat</p>
+              </div>
+              
+              <div class="flex justify-between">
+                <p class="heading-font text-xl text-[var(--gold-light)]">$4,365</p>
+                <a   href="#" aria-label="Add to cart" class="py-1 px-3 border border-[var(--border-color)] hover:text-[var(--bg-dark)] hover:bg-[var(--gold-dark)] duration-300">+</a>
+              </div>
+            </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- RECOGNIZED -->
+      <section class=" py-[80px] px-4">
+        <div class="container mx-auto text-xl uppercase heading-font text-[var(--text-muted)] grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] place-items-center gap-3">
+
+          <p class="w-max p-2">BBB Accredited</p>
+          <p class="w-max p-2">LBMA Member</p>
+          <p class="w-max p-2">NGC Certified</p>
+          <p class="w-max p-2">PCGS Partner</p>
+          <p class="w-max p-2">ICA Approved</p>
+        </div>
+      </section>
+
+      <!-- REQUEST FREE CONSULTATION -->
+      <section class="bg-[var(--bg-dark)] py-[80px] px-4 relative overflow-hidden">
+
+      <!-- SUN RISE :D -->
+<div class="absolute top-0 left-0 
+  w-[450px] h-[450px]
+  bg-[radial-gradient(circle_at_top_left,_rgba(212,168,75,0.45),_rgba(212,168,75,0.2)_30%,_rgba(212,168,75,0.08)_55%,_transparent_75%)]
+  blur-3xl opacity-70">
+</div>
+      <!-- CONTAINER FOR ELEMENTS -->
+      <div class="container mx-auto flex flex-col items-center justify-center gap-4 min-h-[400px] text-center " >
+
+      <h2 class="heading-font text-3xl lg:text-5xl font-semibold">Start Building Your <span class="text-[var(--gold-dark)]">Gold</span> <br class="hidden lg:block"> Portfolio Today</h2>
+      <p class="text-[var(--text-muted)] leading-[1.6]">Whether you're a first-time buyer or experienced investor, our team is ready to help <br class="hidden lg:block"> you achieve your precious metals investment goals.</p>
+
+      <div class="flex gap-3 flex-col md:flex-row w-full justify-center">
+        <a href="#contact" class="button secondary text-sm w-full md:w-auto text-center">
+          Request Free Consultation
+        </a>
+        <a href="#contact" class="button main text-sm w-full md:w-auto text-center">
+          Download Investment Guide
+        </a>
+      </div>
+
+      </div>
+      </section>
+
+
+<!-- CONTACT US SECTION -->
+<section class="py-[80px] px-4 flex items-center bg-[var(--bg-card)]" id="contact">
+  <div class="container mx-auto gap-12 min-h-[calc(100vh-160px)] flex flex-col justify-center">
+
+    <!-- THE GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 h-full">
+
+      <!-- LEFT SIDE OF GRID -->
+      <div class="left-side flex flex-col">
+
+        <div>
+          <p class="text-sm uppercase text-[var(--gold-dark)]">contact us</p>
+          <h2 class="heading-font text-3xl py-4 text-pretty">
+            Let's Discuss Your Investment Goals
+          </h2>
+          <p class="pb-8 text-[var(--text-muted)]">
+            Our precious metals experts are here to answer your questions and
+            <br class="hidden lg:block">
+            guide you through every step of your gold investment journey.
+          </p>
+        </div>
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <ion-icon name="call-outline" class="text-[var(--gold-dark)] inline-block p-1 border border-[var(--border-color)] bg-[var(--bg-dark)]"></ion-icon>
+          <div>
+            <p class="uppercase text-xs text-[var(--text-muted)] mb-1">phone</p>
+            <p>+1 (800) 555-GOLD</p>
+          </div>
+        </div>
+
+        <hr class="border-0 border-b border-[var(--border-color)] opacity-50 my-4 max-w-[500px]">
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <ion-icon name="mail-outline" class="text-[var(--gold-dark)] inline-block p-1 border border-[var(--border-color)] bg-[var(--bg-dark)]"></ion-icon>
+          <div>
+            <p class="uppercase text-xs text-[var(--text-muted)] mb-1">email</p>
+            <p>invest@aurumgold.com</p>
+          </div>
+        </div>
+
+        <hr class="border-0 border-b border-[var(--border-color)] opacity-50 my-4 max-w-[500px]">
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <ion-icon name="map-outline" class="text-[var(--gold-dark)] inline-block p-1 border border-[var(--border-color)] bg-[var(--bg-dark)]"></ion-icon>
+          <div>
+            <p class="uppercase text-xs text-[var(--text-muted)] mb-1">showroom</p>
+            <p>350 Fifth Avenue, Suite 4800</p>
+            <p>New York, NY 10118</p>
+          </div>
+        </div>
+
+        <hr class="border-0 border-b border-[var(--border-color)] opacity-50 my-4 max-w-[500px]">
+
+        <!-- ITEM -->
+        <div class="flex gap-3">
+          <ion-icon name="time-outline" class="text-[var(--gold-dark)] inline-block p-1 border border-[var(--border-color)] bg-[var(--bg-dark)]"></ion-icon>
+          <div>
+            <p class="uppercase text-xs mb-1 text-[var(--text-muted)]">business hours</p>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM EST</p>
+            <p>Sat: 10:00 AM - 2:00 PM EST</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE OF GRID -->
+      <div class="flex justify-end">
+
+        <!-- FORM CONTAINER -->
+        <div class="bg-[var(--bg-dark)] w-full xxl:w-3/4 h-full p-4">
+
+          <form class="text-[var(--text-muted)] flex flex-col h-full gap-4 p-3">
+
+            <!-- FIRST LINE -->
+            <div class="first-line flex flex-col md:flex-row justify-between gap-4">
+
+              <div class="flex-1">
+                <label class="uppercase text-xs mb-2 block" for="first-name">first name</label>
+                <input type="text" id="first-name"
+                  class="border border-[var(--border-color)] p-2 bg-[var(--bg-card)] w-full outline-none duration-300 focus:border-[var(--gold-dark)]"
+                  placeholder="John">
+              </div>
+
+              <div class="flex-1">
+                <label class="uppercase text-xs mb-2 block" for="last-name">last name</label>
+                <input type="text" id="last-name"
+                  class="border border-[var(--border-color)] p-2 bg-[var(--bg-card)] w-full outline-none duration-300 focus:border-[var(--gold-dark)]"
+                  placeholder="Smith">
+              </div>
+
+            </div>
+
+            <!-- SECOND LINE -->
+            <div class="second-line flex flex-col md:flex-row justify-between gap-4">
+
+              <div class="flex-1">
+                <label class="uppercase text-xs mb-2 block" for="email-input">email address</label>
+                <input type="email" id="email-input"
+                  class="border border-[var(--border-color)] p-2 bg-[var(--bg-card)] w-full outline-none duration-300 focus:border-[var(--gold-dark)]"
+                  placeholder="john@example.com">
+              </div>
+
+              <div class="flex-1">
+                <label class="uppercase text-xs mb-2 block" for="phone-input">phone number</label>
+                <input type="text" id="phone-input"
+                  class="border border-[var(--border-color)] p-2 bg-[var(--bg-card)] w-full outline-none duration-300 focus:border-[var(--gold-dark)]"
+                  placeholder="+1 (555) 000-000">
+              </div>
+
+            </div>
+
+            <!-- THIRD LINE -->
+            <div class="third-line">
+              <label class="uppercase text-xs mb-2 block" for="list-input">I'm interested in</label>
+
+              <select id="list-input"
+                class="border border-[var(--border-color)] p-2 bg-[var(--bg-card)] text-white outline-none w-full duration-300 focus:border-[var(--gold-dark)] text-base">
+
+                <option>Select an option</option>
+                <option>Buying Gold</option>
+                <option>Selling Gold</option>
+                <option>Storage Services</option>
+                <option>Gold IRA</option>
+                <option>Other</option>
+
+              </select>
+            </div>
+
+            <!-- FOURTH LINE -->
+            <div class="fourth-line flex-1">
+              <label class="uppercase text-xs mb-3 block" for="message-area">Message</label>
+
+              <textarea id="message-area"
+                class="w-full bg-[var(--bg-card)] outline-none border border-[var(--border-color)] focus:border-[var(--gold-dark)] p-2 text-sm min-h-[140px] max-h-[200px] resize-none"
+                placeholder="Tell us about your investment goals or questions.."></textarea>
+            </div>
+
+            <!-- SUBMIT -->
+            <button type="submit"
+              class="uppercase text-sm text-[var(--bg-dark)] secondary p-3 block duration-300 text-center font-medium contact-table-btn">
+              send message
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+      <!-- FOOTER SECTION -->
+      <footer class="py-[80px] px-4 border-t border-[var(--border-color)]">
+        <!-- CONTAINER FOR ELEMETNS -->
+        <div class="container mx-auto grid
+        grid-cols-1 gap-4 
+        
+        md:grid-cols-[2fr_1fr]
+       
+        lg:grid-cols-[2fr_1fr_1fr]
+        
+        xl:grid-cols-[2fr_1fr_1fr_1fr]
+        ">
+        
+
+        
+
+          <!-- CODE IN CSS -->
+
+          <!-- COL #1 -->
+          <div>
+            <a ><p class="heading-font text-2xl uppercase text-[var(--gold-light)] mb-3">aurum <span class="text-white">gold</span></p></a>
+
+            <p class="text-[var(--text-muted)] text-sm max-w-[400px] leading-[1.6]">
+              Your trusted partner in precious metals investment since 2009. We provide secure, transparent, and competitive gold trading services worldwide.
+            </p>
+          </div>
+
+          <!-- COL #2 -->
+           <div>
+            <ul class="capitalize text-[var(--text-muted)] text-sm flex flex-col gap-3">
+              <li><button class="heading-font text-white text-lg">products</button></li>
+              <li><button >gold coins</button></li>
+              <li><button >gold bars</button></li>
+              <li><button >silver products</button></li>
+              <li><button >platinum</button></li>
+              <li><button >palladium</button></li>
+            </ul>
+           </div>
+
+                     <!-- COL #3 -->
+           <div>
+            <ul class="capitalize text-[var(--text-muted)] text-sm flex flex-col gap-3">
+              <li><button  class="heading-font text-white text-lg">Services</button></li>
+              <li><button >Buy Gold</button></li>
+              <li><button >Sell Your Gold</button></li>
+              <li><button >Secure Storage</button></li>
+              <li><button >Gold IRA</button></li>
+              <li><button >Price Alerts</button></li>
+            </ul>
+           </div>
+
+                    <!-- COL #4 -->
+           <div>
+            <ul class="capitalize text-[var(--text-muted)] text-sm flex flex-col gap-3">
+              <li><button  class="heading-font text-white text-lg">Resources</button></li>
+              <li><button >Gold Market News</button></li>
+              <li><button >Investment Guide</button></li>
+              <li><button >FAQ</button></li>
+              <li><button >About Us</button></li>
+              <li><button >Contact</button></li>
+            </ul>
+           </div>
+
+
+
+
+
+
+        </div>
+      </footer>
+      
+      <!-- LOWER -->
+      <section class="py-[30px]">
+        
+        <!-- CONTAINER -->
+        <div class="container mx-auto border-t border-[var(--border-color)]  py-6 flex flex-col gap-4 items-center md:flex-row md:justify-between">
+          <p class="text-[var(--text-muted)] text-xs">This Project made by <span class="text-[var(--gold-light)]">Mohamed Khaled</span></p>
+          <ul class="flex justify-center gap-2">
+           
+            <li class=""><a  aria-label="social-media button" class="flex justify-center items-center py-0.5 px-1.5 border border-[var(--border-color)] block hover:border-[var(--gold-light)] duration-300"><ion-icon name="call-sharp"></ion-icon></a></li>
+
+          <li class=""><a  aria-label="social-media button" class="flex justify-center items-center py-0.5 px-1.5 border border-[var(--border-color)] block hover:border-[var(--gold-light)] duration-300"><ion-icon name="mail-sharp"></ion-icon></a></li>
+
+
+            <li class=""><a  aria-label="social-media button" class="flex justify-center items-center py-0.5 px-1.5 border border-[var(--border-color)] block hover:border-[var(--gold-light)] duration-300"><ion-icon name="image-sharp"></ion-icon></a></li>
+
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
